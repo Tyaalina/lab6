@@ -70,6 +70,7 @@ function App() {
           label="Просто радио-кнопка"
           labelPlacement="top"
         />
+         <Divider />
         <Switch
           checked={state.checkedA}
           onChange={handleChange}
