@@ -60,7 +60,8 @@ function App() {
       <Paper elevation={5} className={classes.paper}>
       <Avatar alt="python"/>
       <Typography id="discrete-slider" gutterBottom>
-        Микшер громкости
+        {/* Берём из мастера */}
+        Можно взять и подвигать здесь
       </Typography>
         <Grid container spacing={2}>
           <Grid item>
@@ -73,9 +74,12 @@ function App() {
             <VolumeUp />
           </Grid>
         </Grid>
-        <Button variant="contained" color="secondary" fullWidth="true">
+        {/* Берём из этой ветки' */}
+        <Button variant="contained" variant="outlined" color="primary" fullWidth="true">
         Не жми
       </Button>
+      {/* Берём из обоих' */}
+      <Avatar className={classes.purple}>OP</Avatar>
       <TextField id="standard-basic" label="Name" />
       </Paper>
     </div>
