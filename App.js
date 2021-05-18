@@ -41,8 +41,10 @@ function App() {
   return (
     <div className={classes.root}>
       <Paper elevation={5} className={classes.paper}>
-      <Avatar alt="python"/>
-      <Typography id="discrete-slider" gutterBottom>
+        {/* Взять из мастера */}
+      <Avatar alt="python">PY</Avatar>
+      {/* Взять из branch1 */}
+      <Typography id="discrete-slider" gutterBottom color="error">
         Микшер громкости
       </Typography>
         <Grid container spacing={2}>
@@ -60,6 +62,13 @@ function App() {
         Не жми
       </Button>
       <TextField id="standard-basic" label="Name" />
+      {/* Взять из всех веток */}
+      <FormControlLabel
+          value="top"
+          control={<Radio color="primary" />}
+          label="Просто радио-кнопка"
+          labelPlacement="top"
+        />
       </Paper>
     </div>
   );
