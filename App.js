@@ -60,7 +60,7 @@ function App() {
             <VolumeUp />
           </Grid>
         </Grid>
-        <Button variant="contained" color="secondary" fullWidth="true">
+        <Button variant="contained" color="secondary" fullWidth="true" onClick={handleClickMixer}>
         Не жми
       </Button>
       <TextField id="standard-basic" label="Name" />
