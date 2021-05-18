@@ -61,7 +61,7 @@ function App() {
           </Grid>
         </Grid>
         <Button variant="contained" color="secondary" fullWidth="true">
-          Не жми
+          Это кнопка чтобы перейти на edu
       </Button>
         <TextField id="standard-basic" label="Name" />
         <FormControlLabel
