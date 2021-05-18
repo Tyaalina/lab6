@@ -42,11 +42,15 @@ function App() {
     <div className={classes.root}>
       <Paper elevation={5} className={classes.paper}>
         {/* Взять из мастера */}
-      <Avatar alt="python">PY</Avatar>
-      {/* Взять из branch1 */}
-      <Typography id="discrete-slider" gutterBottom color="error">
-        Микшер громкости
+        <Avatar alt="python">PY</Avatar>
+        {/* Взять из branch1 */}
+        <Typography id="discrete-slider" gutterBottom color="error">
+          Микшер громкости
       </Typography>
+        <Fab variant="extended">
+          <NavigationIcon className={classes.extendedIcon} />
+            Navigate
+        </Fab>
         <Grid container spacing={2}>
           <Grid item>
             <VolumeDown />
@@ -59,11 +63,11 @@ function App() {
           </Grid>
         </Grid>
         <Button variant="contained" color="secondary" fullWidth="true">
-        Не жми
+          Не жми
       </Button>
-      <TextField id="standard-basic" label="Name" />
-      {/* Взять из всех веток */}
-      <FormControlLabel
+        <TextField id="standard-basic" label="Name" />
+        {/* Взять из всех веток */}
+        <FormControlLabel
           value="top"
           control={<Radio color="primary" />}
           label="Просто радио-кнопка"
