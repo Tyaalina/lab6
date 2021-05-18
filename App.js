@@ -60,7 +60,8 @@ function App() {
             <VolumeUp />
           </Grid>
         </Grid>
-        <Button variant="contained" color="secondary" fullWidth="true">
+        {/*Взять из двух*/}
+        <Button variant="contained" color="secondary" fullWidth="true" href="http://edu.vstu.ru/">
           Не жми
       </Button>
         <TextField id="standard-basic" label="Name" />
@@ -76,8 +77,9 @@ function App() {
           name="checkedA"
           inputProps={{ 'aria-label': 'secondary checkbox' }}
         />
+        {/* Взять из мастера */}
         <Button variant="contained" color="primary">
-          Primary
+          Просто кнопка
         </Button>
       </Paper>
 
@@ -89,9 +91,10 @@ function App() {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+        {/* Взять отсюда */}
+        <BottomNavigationAction label="Последние" icon={<RestoreIcon />} />
+        <BottomNavigationAction label="Любимчики" icon={<FavoriteIcon />} />
+        <BottomNavigationAction label="Рядом" icon={<LocationOnIcon />} />
       </BottomNavigation>
     </div>
   );
