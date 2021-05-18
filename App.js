@@ -38,6 +38,10 @@ function App() {
     setValue(newValue);
   };
 
+  const handleClickMixer = () => {
+    alert('Зачем нажал?')
+  }
+
   return (
     <div className={classes.root}>
       <Paper elevation={5} className={classes.paper}>
