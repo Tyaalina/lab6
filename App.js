@@ -30,6 +30,23 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+function getSteps() {
+  return ['Прийти на пару', 'Сделать лабу', 'Получить пятёрку'];
+}
+
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return 'Приходим в аудиторию 902а';
+    case 1:
+      return 'Делаем задание выданное на лабе';
+    case 2:
+      return 'Радуемся!';
+    default:
+      return 'Остаёмся в замешательсве';
+  }
+}
+
 function App() {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
