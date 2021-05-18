@@ -73,6 +73,12 @@ function App() {
           label="Просто радио-кнопка"
           labelPlacement="top"
         />
+        <Switch
+        checked={state.checkedA}
+        onChange={handleChange}
+        name="checkedA"
+        inputProps={{ 'aria-label': 'secondary checkbox' }}
+      />
       </Paper>
     </div>
   );
