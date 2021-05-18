@@ -70,6 +70,13 @@ function App() {
       <Avatar>
             <WorkIcon />
       </Avatar>
+      <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
       <TextField id="standard-basic" label="Name" />
       </Paper>
     </div>
