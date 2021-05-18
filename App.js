@@ -38,6 +38,7 @@ function App() {
     setValue(newValue);
   };
 
+  {/* Берём из этой ветки */}
   const handleClickMixer = () => {
     alert('Зачем нажал?')
   }
@@ -61,8 +62,14 @@ function App() {
           </Grid>
         </Grid>
         <Button variant="contained" color="secondary" fullWidth="true" onClick={handleClickMixer}>
-        Не жми
+        {/* Берём из мастера */}
+        Если ты нажмёшь сюда, то будет страшно
       </Button>
+      {/* Берём из двух мест */}
+      <Divider />
+      <Avatar>
+            <WorkIcon />
+      </Avatar>
       <TextField id="standard-basic" label="Name" />
       </Paper>
     </div>
