@@ -76,6 +76,9 @@ function App() {
           name="checkedA"
           inputProps={{ 'aria-label': 'secondary checkbox' }}
         />
+        <Button variant="contained" color="primary">
+          Primary
+        </Button>
       </Paper>
 
       <BottomNavigation
