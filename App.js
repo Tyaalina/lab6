@@ -81,6 +81,13 @@ function App() {
         <Button variant="contained" color="primary">
           Просто кнопка
         </Button>
+        <Switch
+          checked={state.checkedB}
+          onChange={handleChange}
+          color="primary"
+          name="checkedB"
+          inputProps={{ 'aria-label': 'primary checkbox' }}
+        />
       </Paper>
 
       <BottomNavigation
